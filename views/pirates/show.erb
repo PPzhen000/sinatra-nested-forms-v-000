@@ -6,9 +6,10 @@
   </div>
 
 <h2>The Pirate's Ships</h2>
-
-  <div class="ship">
-    <h3>Ship Name: <%= @ship.name %></h3>
-    <h3>Ship Type: <%= @ship.type %></h3>
-    <h3>Ship Booty: <%= @ship.booty %></h3>
-  </div>
+  <%= @ships.each do |ship| %>
+    <div class="ship">
+      <h3>Ship Name: <%= @ship.name %></h3>
+      <h3>Ship Type: <%= @ship.type %></h3>
+      <h3>Ship Booty: <%= @ship.booty %></h3>
+    </div>
+  <%= end %> 
