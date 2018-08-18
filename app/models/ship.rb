@@ -1,6 +1,6 @@
-class Ship 
+class Ship
 
-  attr_reader :name, :type, :booty 
+  attr_reader :name, :type, :booty
 
   SHIPS = []
 
@@ -8,11 +8,11 @@ class Ship
     @name = args[:name]
     @type = args[:type]
     @booty = args[:booty]
-    PIRATES << self
+    SHIPS << self
   end
 
   def self.all
-    PIRATES
+    SHIPS
   end
-  
+
 end
