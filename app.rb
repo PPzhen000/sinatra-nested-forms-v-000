@@ -15,11 +15,11 @@ module FormsLab
 
     post '/pirates' do
       @pirate = Pirate.new(params[:pirate])
-      
+
       params[:pirate][:ships].each do |each_ship|
         Ship.new(each_ship)
       end
-      
+
       @ships = Ship.all
       erb :'pirates/show'
     end
