@@ -7,7 +7,7 @@
 <h2>The Pirate's Ships</h2>
 
   <%= @ships.each do |ship| %>
-    <h3>Ship Name: <%= @ships.name %></h3><br>
-    <h3>Ship Type: <%= @ships.type %></h3><br>
-    <h3>Ship Booty: <%= @ships.booty %></h3><br>
+    <h3>Ship Name: <%= ship.name %></h3><br>
+    <h3>Ship Type: <%= ship.type %></h3><br>
+    <h3>Ship Booty: <%= ship.booty %></h3><br>
   <%= end %>
